@@ -16,7 +16,7 @@ import acount from './assets/icons/icons8_person_1.svg';
 export default function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen min-w-screen pb-16 main-bg-color font ">
+      <div className="min-h-screen min-w-screen pb-16 main-bg-color font max-h-screen max-w-screen">
         <div className="p-6">
           <Routes>
             <Route path="/cafe" element={<Cafe />} />
@@ -26,45 +26,45 @@ export default function App() {
             <Route path="/search" element={<Search />} />
           </Routes>
         </div>
-        <nav className="flex hover:bg-amber-950 fixed bottom-0 left-0 w-full border-t shadow justify-around py-3 z-50 navbar flex-row">
+        <nav className="flex fixed bottom-0 w-full navbar flex-row">
           <NavLink
             to="/cafe"
           >
-            <div className="flex tab-bootom">
-              کافه
+            <div className=" tab-bootom">
               <img src={cafe} alt="خانه" className="w-6 h-6" />
+              کافه
             </div>
           </NavLink>
           <NavLink
             to="/writer"
           >
-            <div className="flex tab-bootom">
-              نویسنده
+            <div className="tab-bootom">
               <img src={writer} alt="خانه" className="w-6 h-6" />
+              نویسنده
             </div>
           </NavLink>
           <NavLink
             to="/library"
           >
-            <div className="flex tab-bootom">
-              کتابخوانه
+            <div className=" tab-bootom">
               <img src={library} alt="خانه" className="w-6 h-6 " />
+              کتابخوانه
             </div>
           </NavLink>
           <NavLink
             to="/acount"
           >
-            <div className="flex tab-bootom">
-              حساب کاربری
+            <div className=" tab-bootom">
               <img src={acount} alt="خانه" className="w-6 h-6" />
+              حساب کاربری
             </div>
           </NavLink>
           <NavLink
             to="/search"
           >
-            <div className="flex tab-bootom">
+            <div className=" tab-bootom">
+              <img src={search} alt="خانه" className="w-6 h-6" />
               جستجو
-              <img src={search} alt="خانه" className="w-5 h-5" />
             </div>
           </NavLink>
 
