@@ -3,7 +3,7 @@
 import { useRef, useState, useEffect } from "react";
 import { Card } from "./Card";
 import FaChevronLeft from "../assets/icons/icons8_Back_Arrow.svg";
-import FaChevronRight from "../assets/icons/icons8_Back_Arrow.svg";
+import FaChevronRight from "../assets/icons/icons8_Forward_Arrow.svg";
 import "./styles.css"
 
 interface CardHolderProps {

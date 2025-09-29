@@ -108,3 +108,54 @@ export const banners = [
       { id: "5", image: banner3 ,},
 ];
 
+export const samplePosts = [
+  {
+    avatar: "https://i.pravatar.cc/100?img=1",
+    name: "محمد",
+    type: "plain" as const,
+    message: "این یک پست ساده است",
+    likes: 12,
+    comments: 3,
+    time: "۲ ساعت پیش",
+  },
+  {
+    avatar: "https://i.pravatar.cc/100?img=2",
+    name: "علی",
+    type: "bookReply" as const,
+    message: "این کتاب عالی بود!",
+    book: {
+      cover: "https://picsum.photos/60/90",
+      title: "کتاب تستی",
+      author: "نویسنده تستی",
+    },
+    likes: 5,
+    comments: 1,
+    time: "۱ روز پیش",
+  },
+  {
+    avatar: "https://i.pravatar.cc/100?img=3",
+    name: "زهرا",
+    type: "quote" as const,
+    message: "این نقل‌قول خیلی الهام‌بخش بود:",
+    quoteText:
+      "زندگی مثل دوچرخه‌سواری است. برای حفظ تعادل باید حرکت کنی.  زندگی مثل دوچرخه‌سواری است. برای حفظ تعادل باید حرکت کنی. زندگی مثل دوچرخه‌سواری است. برای حفظ تعادل باید حرکت کنی. زندگی مثل دوچرخه‌سواری است. برای حفظ تعادل باید حرکت کنی.  زندگی مثل دوچرخه‌سواری است. برای حفظ تعادل باید حرکت کنی. زندگی مثل دوچرخه‌سواری است. برای حفظ تعادل باید حرکت کنی. زندگی مثل دوچرخه‌سواری است. برای حفظ تعادل باید حرکت کنی. این جمله از انیشتین همیشه منو به جلو هل میده.",
+    likes: 20,
+    comments: 7,
+    time: "۳ روز پیش",
+  },
+  {
+  avatar: "https://i.pravatar.cc/100?img=3",
+  name: "زهرا",
+  type: "excerptReply" as const,
+  excerpt: "این بخشی از متن کتاب است که خیلی جالب بو خیلی جالب بود...",
+  message: "این قسمت خیلی به دلم نشست",
+  book: {
+    cover: "https://picsum.photos/60/90",
+    title: "کتاب دوم",
+    author: "نویسنده دوم",
+  },
+  likes: 8,
+  comments: 2,
+  time: "۳ روز پیش",
+}
+];
