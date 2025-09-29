@@ -21,18 +21,31 @@ export function Card({ title, description, image, onClick }: CardProps) {
                 aspectRatio: "160/256",
             }}
         >
-            {/* پس‌زمینه بلور شده */}
-            <div
-                className="absolute inset-0"
+
+            <img
+                src={image}
+                alt={title}
+                className="absolute w-full rounded-lg object-cover  inset-0 bg-white/80"
                 style={{
-                    backgroundImage: `url(${image})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                     filter: "blur(10px)",
+                    transform: "scale(1.1)",
+                }}
+            />
+            {/* <div
+                className="absolute inset-0"
+                style={{
+
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    filter: "blur(10px)",
+                    transform: "scale(1.1)",
+                    // backgroundColor:'red'
                 }}
             >
                 <div className="absolute inset-0 bg-white/30"></div>
-            </div>
+            </div> */}
 
 
             {/* محتوای کارت */}

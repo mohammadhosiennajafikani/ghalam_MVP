@@ -5,10 +5,7 @@ import { banners, cardData } from "../data/dummyData"
 export default function Library() {
   return (
     <div >
-      <h1 className="bold text-emerald-950 text-shadow-lg  bg-amber-100 rounded-2xl  ">قلم</h1>
-
         <BannerHolder data={banners} />
-
       <CardHolder
         title="محصولات ویژه"
         description="جدید ترین کتاب ها"
