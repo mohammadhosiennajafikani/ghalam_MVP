@@ -3,6 +3,9 @@ import book1 from "../assets/books/book1.png";
 import book2 from "../assets/books/book2.png";
 import book3 from "../assets/books/book3.png";
 import book4 from "../assets/books/book4.png";
+import banner1 from '../assets/banner.png';
+import banner2 from '../assets/banner2.png';
+import banner3 from '../assets/banner3.png';
 
 export const cardData = [
   {
@@ -13,7 +16,7 @@ export const cardData = [
     onClick: () => console.log("کارت ۱ کلیک شد"),
   },
   {
-     id: "2",
+    id: "2",
     image: book2,
     title: "کتاب فلان",
     description: "دینی مذهبی",
@@ -81,11 +84,27 @@ export const cardData = [
     description: "کتاب‌هایی برای رشد ذهنی و شخصی",
     onClick: () => console.log("کارت ۳ کلیک شد"),
   },
+  {
+    id: "12",
+    image: book4,
+    title: "کتاب فلان",
+    description: "کتاب‌هایی برای رشد ذهنی و شخصی",
+    onClick: () => console.log("کارت ۳ کلیک شد"),
+  },
+  {
+    id: "13",
+    image: book4,
+    title: "کتاب فلان",
+    description: "کتاب‌هایی برای رشد ذهنی و شخصی",
+    onClick: () => console.log("کارت ۳ کلیک شد"),
+  },
 ];
 
 export const banners = [
-    { id: "1", image: ("../assets/banner.png") },
-    { id: "2", image: ("../assets/banner2.png") },
-    { id: "3", image: ("../assets/banner3.png") },
-  ];
+  { id: "1", image: banner1 ,},
+  { id: "2", image: banner2, },
+  { id: "3", image: banner3 ,},
+    { id: "4", image: banner3 ,},
+      { id: "5", image: banner3 ,},
+];
 

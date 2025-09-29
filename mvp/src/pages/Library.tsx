@@ -7,15 +7,15 @@ export default function Library() {
     <div >
       <h1>library</h1>
 
+        <BannerHolder data={banners} />
+
       <CardHolder
         title="محصولات ویژه"
         description="جدیدترین کارت‌ها"
         data={cardData}
       />
 
-      <BannerHolder data={banners}>
-        
-      </BannerHolder>
+
     </div>
   );
 }

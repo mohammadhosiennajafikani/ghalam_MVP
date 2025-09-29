@@ -1,0 +1,9 @@
+.scroll-container {
+  overflow: auto; /* یا scroll */
+  scrollbar-width: none; /* برای فایرفاکس */
+  -ms-overflow-style: none; /* برای اینترنت اکسپلورر */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* برای مرورگرهای مبتنی بر WebKit مثل Chrome و Safari */
+}

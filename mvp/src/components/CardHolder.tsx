@@ -4,6 +4,7 @@ import { useRef, useState, useEffect } from "react";
 import { Card } from "./Card";
 import FaChevronLeft from "../assets/icons/icons8_Back_Arrow.svg";
 import FaChevronRight from "../assets/icons/icons8_Back_Arrow.svg";
+import "./styles.css"
 
 interface CardHolderProps {
     title: string;
@@ -58,7 +59,7 @@ export function CardHolder({ title, description, data }: CardHolderProps) {
     return (
         <div className="my-6 bg-green-200 rounded-xl p-4 relative scrollbar-hide ">
             {/* Header */}
-            <div className="mb-3 px-4 text-right">
+            <div className="mb-3 px-4 right-1">
                 <h2 className="text-lg font-bold text-gray-800">{title}</h2>
                 {description && (
                     <p className="text-sm text-gray-600 mt-1">{description}</p>
@@ -66,10 +67,13 @@ export function CardHolder({ title, description, data }: CardHolderProps) {
             </div>
 
             {/* Carousel */}
-            <div className="relative ">
+            <div className="relative">
                 <div
                     ref={scrollRef}
-                   className="flex overflow-x-auto space-x-4 scrollbar-hide scroll-smooth"
+                   className="flex overflow-x-auto space-x-4 scroll-smooth  scroll-container"
+                   style={{ overflow:'auto'
+
+                   }}
                 >
                     {data.map((item, index) => (
                         <div
