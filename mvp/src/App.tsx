@@ -12,6 +12,7 @@ import cafe from './assets/icons/icons8_cafe_2.svg';
 import writer from './assets/icons/icons8_writer_male.svg';
 import search from './assets/icons/icons8_search.svg';
 import acount from './assets/icons/icons8_person_1.svg';
+import BookDetail from "./pages/BookDetail";
 
 export default function App() {
   return (
@@ -24,6 +25,7 @@ export default function App() {
             <Route path="/library" element={<Library />} />
             <Route path="/acount" element={<Acount />} />
             <Route path="/search" element={<Search />} />
+            <Route path="/book" element={<BookDetail />} />
           </Routes>
         </div>
         <nav className=" flex fixed  w-full navbar flex-row rounded-2xl h-14">

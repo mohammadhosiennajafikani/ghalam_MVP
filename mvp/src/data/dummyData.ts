@@ -1,3 +1,4 @@
+
 import book1 from "../assets/books/book(1).png";
 import book2 from "../assets/books/book(2).png";
 import book3 from "../assets/books/book(3).png";
@@ -7,7 +8,7 @@ import book6 from "../assets/books/book(6).png";
 import book7 from "../assets/books/book(7).png";
 import book8 from "../assets/books/book(8).png";
 import book9 from "../assets/books/book(9).png";
-
+import img from "../assets/icons/icons8_Administrator_Male.svg"
 import banner1 from '../assets/banner.png';
 import banner2 from '../assets/banner2.png';
 import banner3 from '../assets/banner3.png';
@@ -19,7 +20,7 @@ export const cardData = [
     image: book1,
     title: "نام نویسنده",
     description: "نام کتاب",
-    onClick: () => console.log("کارت ۱ کلیک شد"),
+    onClick: () => console.log("کارت 1 کلیک شد"),
   },
   {
     id: "2",
@@ -31,7 +32,7 @@ export const cardData = [
   {
     id: "3",
     image: book2,
-    title:"نام نویسنده",
+    title: "نام نویسنده",
     description: "نام کتاب",
     onClick: () => console.log("کارت ۳ کلیک شد"),
   },
@@ -65,7 +66,7 @@ export const cardData = [
   }, {
     id: "8",
     image: book6,
-    title:"نام نویسنده",
+    title: "نام نویسنده",
     description: "نام کتاب",
     onClick: () => console.log("کارت ۳ کلیک شد"),
   },
@@ -79,21 +80,21 @@ export const cardData = [
   {
     id: "10",
     image: book9,
-    title:"نام نویسنده",
+    title: "نام نویسنده",
     description: "نام کتاب",
     onClick: () => console.log("کارت ۳ کلیک شد"),
   },
   {
     id: "11",
     image: book8,
-    title:"نام نویسنده",
+    title: "نام نویسنده",
     description: "نام کتاب",
     onClick: () => console.log("کارت ۳ کلیک شد"),
   },
   {
     id: "12",
     image: book4,
-    title:"نام نویسنده",
+    title: "نام نویسنده",
     description: "نام کتاب",
     onClick: () => console.log("کارت ۳ کلیک شد"),
   },
@@ -115,7 +116,7 @@ export const banners = [
 
 export const samplePosts = [
   {
-    avatar: "https://i.pravatar.cc/100?img=1",
+    avatar: img,
     name: "محمد",
     type: "plain" as const,
     message: "این یک پست ساده است",
@@ -124,7 +125,7 @@ export const samplePosts = [
     time: "۲ ساعت پیش",
   },
   {
-    avatar: "https://i.pravatar.cc/100?img=2",
+    avatar: img,
     name: "علی",
     type: "bookReply" as const,
     message: "این کتاب عالی بود!",
@@ -138,7 +139,7 @@ export const samplePosts = [
     time: "۱ روز پیش",
   },
   {
-    avatar: "https://i.pravatar.cc/100?img=3",
+    avatar: img,
     name: "زهرا",
     type: "quote" as const,
     message: "این نقل‌قول خیلی الهام‌بخش بود:",
@@ -149,7 +150,7 @@ export const samplePosts = [
     time: "۳ روز پیش",
   },
   {
-    avatar: "https://i.pravatar.cc/100?img=3",
+    avatar: img,
     name: "زهرا",
     type: "excerptReply" as const,
     excerpt: "این بخشی از متن کتاب است که خیلی جالب بو خیلی جالب بود...",
@@ -171,7 +172,7 @@ export const userData = {
   bio: "عاشق کدنویسی و کتاب 📚",
   followers: 1200,
   following: 340,
-  profileImage: "https://i.pravatar.cc/100?img=1",
+  profileImage: img,
 };
 
 export const books = [

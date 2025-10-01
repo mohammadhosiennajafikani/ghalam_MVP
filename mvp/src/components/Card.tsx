@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 interface CardProps {
     title: string;
@@ -9,7 +11,8 @@ interface CardProps {
 }
 export function Card({ title, description, image, onClick }: CardProps) {
     const [pressed, setPressed] = useState(false);
-
+    
+    const navigate = useNavigate();
     return (
         <div
             className="relative rounded-xl overflow-hidden"
@@ -51,7 +54,8 @@ export function Card({ title, description, image, onClick }: CardProps) {
             {/* محتوای کارت */}
             <button
                 type="button"
-                onClick={onClick}
+               onClick={() => navigate(`/book`)}
+
                 onMouseDown={() => setPressed(true)}
                 onMouseUp={() => setPressed(false)}
                 onMouseLeave={() => setPressed(false)}
