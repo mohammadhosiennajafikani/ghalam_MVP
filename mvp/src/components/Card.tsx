@@ -11,7 +11,8 @@ interface CardProps {
 }
 export function Card({ title, description, image, onClick }: CardProps) {
     const [pressed, setPressed] = useState(false);
-    
+onClick;
+// TODO: compelete that above این بالایی رو یادت نره درست کنب برای ایرور نگیره گذاشتم
     const navigate = useNavigate();
     return (
         <div

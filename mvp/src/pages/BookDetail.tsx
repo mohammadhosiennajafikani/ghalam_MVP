@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ArrowLeft, User as UserIcon, ShoppingCart } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -6,7 +6,21 @@ import bookim from '../assets/books/book(1).png'
 
 
 export default function BookDetail() {
-  const [book, setBook] = useState(null);
+  type BookType = {
+    id: string;
+    title: string;
+    author_id: string;
+    author_name: string;
+    genre: string;
+    description: string;
+    pages: number;
+    sample_text: string;
+    price: number;
+    cover_image: string;
+  };
+
+  const [book, setBook] = useState<BookType | null>(null);
+
   const [isLoading, setIsLoading] = useState(true);
   const location = useLocation();
   const urlParams = new URLSearchParams(location.search);
